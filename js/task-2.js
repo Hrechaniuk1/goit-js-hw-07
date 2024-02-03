@@ -32,7 +32,7 @@ const images = [
 function createGallery() {
   const gallery = document.querySelector(".gallery")
   gallery.classList.add("images-list")
-  const addTag = images.map((img) => `<li><img src="${img.url}" alt="${img.alt}" class="img-in-list"></li>`).join("")
+  const addTag = images.map((img) => `<li class="img-container" ><img src="${img.url}" alt="${img.alt}" class="img-in-list"></li>`).join("")
   gallery.innerHTML = addTag
   return addTag
 }

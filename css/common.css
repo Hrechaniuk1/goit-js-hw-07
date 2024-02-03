@@ -13,10 +13,54 @@ body {
   line-height: 1.5;
 }
 
+/* task 1 */
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#categories .item {
+  background-color: #F6F6FE;
+  padding: 20px;
+}
+
+.item ul {
+  list-style-type: none;
+}
+
+.item li {
+  border: solid 1px #212121;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.item ul {
+  padding: 0;
+}
+
+.item li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 /* task 2 */
 .img-in-list {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container {
   max-width: 360px;
-  max-height: 300px;
+    max-height: 300px;
+    overflow: hidden;
+
 }
 
 .images-list {
@@ -31,4 +75,162 @@ body {
  margin-right: auto;
 }
 
-/* task 2 */
+/* task 3 */
+
+#name-input {
+  border: solid 1px gray;
+  border-radius: 5px;
+  width: 360px;
+  height: 40px;
+  background-color: transparent;
+  padding: 5px;
+  outline: transparent;
+  transition: border 250ms ease-in-out;
+}
+
+#name-input::placeholder {
+  color: #212121;
+}
+
+
+#name-input:active {
+  border: solid 1px black;
+}
+
+/* task 4 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  color: gray;
+}
+
+.login-form input {
+  width: 350px;
+  height: 40px;
+  padding: 10px;
+  color: #212121;
+  border: solid 1px gray;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: border 250ms ease-in-out;
+  outline: transparent;
+
+}
+
+.login-form input:active{
+  border: solid 1px black;
+}
+
+.login-form button {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px transparent;
+  background-color: #4E75FF;
+  color: #F6F6FE;
+  font-weight: 700;
+  transition: background-color 250ms ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: #6C8CFF;
+}
+
+/* task 5 */
+
+.widget {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.widget button {
+  width: 140px;
+height: 40px;
+padding: 10px;
+color: white;
+background-color: #4E75FF;
+border: solid 1px transparent;
+border-radius: 5px;
+font-size: 14px;
+transition: background-color 250ms ease-in-out;
+}
+
+.widget button:hover, .widget button:active {
+  background-color: #6C8CFF;
+}
+
+/* task 6 */
+#controls {
+  background-color: #F6F6FE;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#controls input {
+  height: 40px;
+  width: 150px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: transparent;
+  background-color: transparent;
+  padding: 0 10px;
+  text-align: center;
+  transition: border 250ms ease-in-out;
+}
+
+#controls input:active {
+  border: solid 1px black;
+}
+
+#controls button[data-create] {
+  height: 40px;
+  width: 110px;
+  border: 1px solid transparent;
+  background-color: #4E75FF;
+  padding: 0 10px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 250ms ease-in-out;
+}
+
+#controls button[data-create]:hover {
+  background-color: #6C8CFF;
+}
+
+#controls button[data-destroy] {
+  height: 40px;
+  width: 120px;
+  border: 1px solid transparent;
+  background-color: #FF4E4E;
+  padding: 0 10px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 250ms ease-in-out;
+}
+
+#controls button[data-destroy]:hover {
+background-color: #FF7070;
+}
+
+#boxes {
+  background-color: #F6F6FE;
+  padding: 40px;
+  border-radius: 30px;
+}
