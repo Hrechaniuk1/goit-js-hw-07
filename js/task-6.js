@@ -8,16 +8,24 @@ const inputNum = document.querySelector("#controls input")
 const createBtn = document.querySelector("#controls button[data-create]")
 const destrBtn = document.querySelector("#controls button[data-destroy]")
 const boxCollection = document.querySelector("#boxes")
-const randomBox = document.createElement("div")
-randomBox.style.width = "300px"
-randomBox.style.heigh = "300px"
-randomBox.style.backgroundColor = '${ getRandomHexColor() }'
-randomBox.style.marginLeft = "auto"
-randomBox.style.marginRight = "auto"
+const randomBox = `<div style=" width: 300px; height: 300px; margin-left: auto; margin-right: auto; margin-bottom: 30px; background-color: ${getRandomHexColor() } ;"></div>`
 
 createBtn.addEventListener("click", addItems)
 destrBtn.addEventListener("click", deleteItems)
+inputNum.addEventListener("change", getInputValue)
 
 function addItems(event) {
-  return boxCollection.insertAdjacentHTML('beforeend', randomBox);
+  for (let i = 1; i <= getInputValue(); i++)
+    boxCollection.insertAdjacentHTML('beforeend', randomBox);
+  return
+}
+
+
+function getInputValue(event) {
+  let amount = inputNum.value;
+  return amount
+}
+
+function deleteItems(event) {
+  return boxCollection.innerHTML = ""
 }
