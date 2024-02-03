@@ -11,7 +11,7 @@ const boxCollection = document.querySelector("#boxes")
 
 createBtn.addEventListener("click", createBoxes)
 destrBtn.addEventListener("click", destroyBoxes)
-inputNum.addEventListener("change", getInputValue)
+inputNum.addEventListener("input", getInputValue)
 
 
 let boxSize = 30

@@ -2,7 +2,6 @@ const listOfThings = document.querySelector("#categories")
 
 
 const categoryAmount = () => {
-    const listOfThings = document.querySelector("#categories")
 const itemsAmount = listOfThings.children.length
 return `Кількість категорій в списку ${itemsAmount}`
 }
