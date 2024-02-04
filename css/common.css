@@ -18,16 +18,28 @@ body {
 #categories {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 400px;
+  gap: 24px;
+  max-width: 440px;
   list-style-type: none;
   margin-left: auto;
   margin-right: auto;
+  padding: 24px 40px;
 }
 
 #categories .item {
   background-color: #F6F6FE;
-  padding: 20px;
+  padding: 16px;
+}
+
+.item h2 {
+  margin-bottom: 16px;
+  color: rgb(46, 47, 66);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 4%;
+    text-align: left;
 }
 
 .item ul {
@@ -37,7 +49,16 @@ body {
 .item li {
   border: solid 1px #212121;
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px 16px;
+  width: 360px;
+    height: 40px;
+    color: rgb(46, 47, 66);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 4%;
+      text-align: left;
 }
 
 .item ul {
@@ -45,7 +66,7 @@ body {
 }
 
 .item li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* task 2 */
@@ -67,7 +88,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
-  row-gap: 36px;
+  row-gap: 48px;
  list-style-type: none;
  padding: 0;
  max-width: 1128px;
@@ -78,14 +99,22 @@ body {
 /* task 3 */
 
 #name-input {
-  border: solid 1px gray;
-  border-radius: 5px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 4px;
   width: 360px;
   height: 40px;
   background-color: transparent;
-  padding: 5px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
   outline: transparent;
-  transition: border 250ms ease-in-out;
+  color: rgb(46, 47, 66);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+      transition: border 250ms ease-in-out;
 }
 
 #name-input::placeholder {
@@ -97,15 +126,24 @@ body {
   border: solid 1px black;
 }
 
+h1 {
+  color: rgb(46, 47, 66);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 4%;
+    text-align: left;
+    margin: 0;
+}
+
 /* task 4 */
 .login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 350px;
+  max-width: 408px;
   margin-left: auto;
   margin-right: auto;
   color: gray;
+  padding: 24px;
 }
 
 .login-form input {
@@ -113,26 +151,48 @@ body {
   height: 40px;
   padding: 10px;
   color: #212121;
-  border: solid 1px gray;
-  border-radius: 5px;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 4px;
   background-color: transparent;
+  margin-top: 8px;
   transition: border 250ms ease-in-out;
   outline: transparent;
 
+}
+
+.login-form input:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .login-form input:active{
   border: solid 1px black;
 }
 
+.login-form label {
+  color: rgb(46, 47, 66);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 4%;
+    text-align: left;
+}
+
 .login-form button {
   width: 80px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 8px;
+    background: rgb(78, 117, 255);
   border: solid 1px transparent;
-  background-color: #4E75FF;
-  color: #F6F6FE;
   font-weight: 700;
+  margin-top: 16px;
+  color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: center;
   transition: background-color 250ms ease-in-out;
 }
 
@@ -143,7 +203,7 @@ body {
 /* task 5 */
 
 .widget {
-  max-width: 300px;
+  max-width: 345px;
   margin-left: auto;
   margin-right: auto;
   font-size: 16px;
@@ -152,17 +212,24 @@ body {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  padding: 100px 88px;
 }
 
 .widget button {
-  width: 140px;
-height: 40px;
-padding: 10px;
+width: 148px;
+  height: 40px;
+padding: 8px 16px;
 color: white;
-background-color: #4E75FF;
+border-radius: 8px;
+  background: rgb(78, 117, 255);
 border: solid 1px transparent;
-border-radius: 5px;
-font-size: 14px;
+color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  text-align: center;
 transition: background-color 250ms ease-in-out;
 }
 
@@ -170,25 +237,30 @@ transition: background-color 250ms ease-in-out;
   background-color: #6C8CFF;
 }
 
+.widget p {
+  max-width: 345px;
+  text-align: center;
+}
+
 /* task 6 */
 #controls {
   background-color: #F6F6FE;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 32px;
   display: flex;
-  gap: 15px;
+  gap: 16px;
   justify-content: center;
   margin-bottom: 40px;
+  border-radius: 8px;
 }
 
 #controls input {
+width: 150px;
   height: 40px;
-  width: 150px;
-  border: 1px solid gray;
-  border-radius: 5px;
+border: 1px solid rgb(128, 128, 128);
+  border-radius: 8px;
   outline: transparent;
   background-color: transparent;
-  padding: 0 10px;
+  padding: 8px 10px;
   text-align: center;
   transition: border 250ms ease-in-out;
 }
@@ -201,8 +273,8 @@ transition: background-color 250ms ease-in-out;
   height: 40px;
   width: 110px;
   border: 1px solid transparent;
-  background-color: #4E75FF;
-  padding: 0 10px;
+  background-color: rgb(78, 117, 255);;
+  padding: 8px 16px;
   text-align: center;
   color: white;
   border-radius: 8px;
@@ -232,8 +304,8 @@ background-color: #FF7070;
 #boxes {
   background-color: #F6F6FE;
   padding: 40px;
-  border-radius: 30px;
+  border-radius: 8px;
   display: flex;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
 }

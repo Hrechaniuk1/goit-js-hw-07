@@ -32,14 +32,12 @@ function createBoxes() {
 
 
 function getInputValue() {
-  let amount = inputNum.value;
-  return amount
+  return inputNum.value
 
 }
 
 function destroyBoxes() {
   boxCollection.innerHTML = ""
   boxSize = 30
-  return
 }
 

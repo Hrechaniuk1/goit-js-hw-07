@@ -1,12 +1,14 @@
 const nameInput = document.querySelector("#name-input")
 const hiNameOut = document.querySelector("#name-output")
 
-nameInput.addEventListener("input", ((event) => {
-    if (event.currentTarget.value.trim() === "") {
-hiNameOut.textContent = "Anonymous"
-    }
-    else { 
-        hiNameOut.textContent = event.currentTarget.value.trim()
-    }
 
-}))
+nameInput.addEventListener("input", setName)
+
+function setName(ev) {
+    if (ev.currentTarget.value.trim() === "") {
+        hiNameOut.textContent = "Anonymous"
+    } else {
+        hiNameOut.textContent = ev.currentTarget.value.trim()
+    }
+}
+
