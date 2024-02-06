@@ -11,8 +11,8 @@ const colorText = document.querySelector(".color")
 colorBtn.addEventListener("click", colorChangeFun)
 
 function colorChangeFun() {
-  let colorRan = getRandomHexColor()
-  siteBody.style.backgroundColor = colorRan
-  colorText.textContent = colorRan
+  let colorRandom = getRandomHexColor()
+  siteBody.style.backgroundColor = colorRandom
+  colorText.textContent = colorRandom
   
 }
