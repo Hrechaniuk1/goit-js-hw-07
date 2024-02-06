@@ -15,7 +15,6 @@ inputNum.addEventListener("input", getInputValue)
 
 
 let boxSize = 30
-  
 
 function createBoxes() {
   if ((getInputValue() <= 100) && (getInputValue() >= 1)) {
